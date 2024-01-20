@@ -36,9 +36,12 @@ label {
 }
 
 .container {
+    
     display: flex;
+    /*
     flex-flow: row wrap;
     align-items: stretch;
+    */
 }
 
 .left-container {
@@ -49,6 +52,34 @@ label {
     margin: 0px;
     position: relative;
     box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.spacer-1 {
+    flex-grow: 2;
+}
+
+.spacer-2 {
+    flex-grow: 12;
+}
+
+.title-container {
+    background-color: hsl(192, 17%, 6%);
+    color: #fff;
+    width: 100%;
+    opacity: .3;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+}
+
+
+
+.odin-logo {
+    height: 7.5rem;
 }
 
 .right-container {
@@ -57,25 +88,6 @@ label {
     display:flex;
     flex-flow: column nowrap;
     justify-content: center;
-}
-
-.title-container {
-    height: 15rem;
-    background-color: #0c1011;
-    color: #fff;
-    /*
-    opacity: .3;
-    */
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    margin: auto;
-    top: 20%;
-    transform: translateY(-20%);
-}
-
-.odin-logo {
-    height: 7.5rem;
 }
 
 .form-header {
