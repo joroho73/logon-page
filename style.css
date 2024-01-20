@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "TitleFont";
+    src: url(Norse-Bold.otf) format("truetype");
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.bdr {
+    border: 1px solid burlywood;
+}
+
+h1.customfont {
+    font-size: 10rem;
+    font-family: 'TitleFont', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+
+  }
+
+  form li + li {
+    margin-top: 1em;
+  }
+
+label {
+    font-family: 'TitleFont', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+.left-container {
+    width: 40%;
+    background: #bde5fe url("../i/seascape.jpg") no-repeat 10%;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.right-container {
+    width: 60%;
+    background-color: #93c8f2;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.title-container {
+    height: 15rem;
+    background-color: #0c1011;
+    color: #fff;
+    /*
+    opacity: .3;
+    */
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    transform: translateY(-20%);
+}
+
+.odin-logo {
+    height: 7.5rem;
+}
+
+.form-header {
+
+}
+.form-container {
+    height:fit-content;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.form-footer {
+
+}
+
+.formlist {
+    list-style : none;
+}
+
+.form-container div {
+    border: 1px solid red;
+}
