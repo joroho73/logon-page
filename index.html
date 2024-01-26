@@ -22,19 +22,22 @@
         </div>
     <form action="" id="inputform">
         <div class="form-container ">
-            <div><label for="firstname">First Name*<input type="text" id="firstname" name="firstname" autocomplete="given-name" <!--required--></label></div>
+            <div class="nopadding"></div>
+            <div class="nopadding"><p class="customfont alignright">* = required</p></div>
+            <div><label for="firstname">First Name*<input type="text" id="firstname" name="firstname" autocomplete="given-name" required></label></div>
             <div><label for="lastname">Last Name<input type="text" id="lastname" name="lastname" autocomplete="family-name"></label></div>
-            <div><label for="email">Email Address*<input type="email" id="email" name="email" autocomplete="email" <!--required--></label></div>
+            <div><label for="email">Email Address*<input type="email" id="email" name="email" autocomplete="email" required></label></div>
             <div><label for="phone">Phone Number<input type="tel" id="phone" name="phone" autocomplete="mobile"></label></div>
-            <div class="bdr"><label for="password">Password*<input type="password" id="password" name="password" autocomplete="current-password" required></label></div>
-            <div class="bdr"><label for="confirmpassword">Confirm Password*<input type="password" id="confirmpassword" name="confirmpassword" autocomplete="current-password" required></label></div>
+            <div><label for="password">Password*<input type="password" id="password" name="password" autocomplete="current-password" required></label></div>
+            <div><label for="confirmpassword">Confirm Password*<input type="password" id="confirmpassword" name="confirmpassword" autocomplete="current-password" required></label></div>
             <div class="break"></div>
-            <div class="bdr"><p class="customfont bdr">* = required</p></div>
-            <div class="bdr"><span id="passwordMessage" class="customfont bdr" /></div>
+            <div class="wide100"><div id="passwordFormatMessage" class="customfont"></div></div>
+            <div class="form-foote"><input type="submit" class="button" id="submitbutton" /></div>
+            <div><div id="passwordMessage" class="customfont"></div></div>
         </div>
         
         <div class="form-footer">
-            <input type="submit" class="button" id="submitbutton" />
+
         </div>
     </form>
     </div>

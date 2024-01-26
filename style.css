@@ -20,8 +20,6 @@ html, body {
     margin: 0px;
 }
 
-
-
 h1 {
     font-size: 10rem;
 }
@@ -38,7 +36,6 @@ p {
 form {
     /* Center the form on the page */
     margin: 0 auto;
-
   }
 
   form li + li {
@@ -50,12 +47,7 @@ label {
 }
 
 .container {
-    
     display: flex;
-    /*
-    flex-flow: row wrap;
-    align-items: stretch;
-    */
 }
 
 .left-container {
@@ -112,7 +104,6 @@ label {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-
     background-color: #B1DAFB;
     filter: drop-shadow(1px 1px 4px grey);
     margin: 1.6rem 0px;
@@ -133,9 +124,14 @@ label {
     flex-basis: 213px;
 }
 
+.nopadding{
+    padding: 0px 0.4rem !important;
+    margin: 0px !important;
+}
+
 /* 
    This is used to attach a linebreak in flexbox. 
-   IMPORTANT, this declaration should appear 
+   IMPORTANT, this declaration must appear 
    after '.form-contaier div'.
 */
 .break {
@@ -145,32 +141,32 @@ label {
     margin: 0px;
   }
 
-
+.wide100 {
+    flex-basis: 446px !important ;
+  }
 
 label,input{
     display:flex;
     flex-direction:column;
   }
 
-  input {
+input {
     border: 1px solid gray;
     border-radius: 3px;
     padding: 0.4rem;
-   
   }
 
-  input:invalid {
+input:invalid {
     border: 2px solid white;
     background-color: lightpink;
-
   }
   
-  input:valid {
+input:valid {
     border: 2px solid black;
     background-color:#c7ffc7;
   }
 
-  .button {
+.button {
     font-family: 'TitleFont', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     padding: .2rem 1.2rem;
@@ -186,25 +182,32 @@ label,input{
 }
 
 .button:valid {
-
     background-color: blue;
     color: white   ;
 }
 
 #passwordMessage {
     padding: .2em;
-    
+    border-radius: 3px;
+}
+
+#passwordFormatMessage{
+    padding: .2em;
     border-radius: 3px;
 }
 
 .passwordMessageTrue {
     background-color: #c7ffc7;
-    border: 2px solid white;
-
+    border: 2px solid white !important;
 }
 
 .passwordMessageFalse {
     background-color: lightpink;
-    border: 2px solid white;
-
+    border: 2px solid white !important;
 }
+
+.alignright {
+    align-content: flex-start;
+    text-align: right;
+}
+
