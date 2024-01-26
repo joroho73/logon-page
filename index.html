@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up!</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
 </head>
 <body class="container">
     <div class="left-container">
@@ -15,19 +16,25 @@
         <div class="spacer-2"></div>
     </div>
     <div class="right-container">
-        <div class="form-header bdr">some text</div>
-        <form action="">
-        <div class="form-container bdr">
-            <div><label for="firstname">First Name<input type="text" id="firstname" name="firstname"></label></div>
-            <div><label for="lastname">Last Name<input type="text" id="lastname" name="lastname"></label></div>
-            <div><label for="email">Email Address<input type="email" id="email" name="email"></label></div>
-            <div><label for="phone">Phone Number<input type="tel" id="phone" name="phone"></label></div>
-            <div><label for="password">Password<input type="password" id="password" name="password"></label></div>
-            <div><label for="confirmpassword">Confirm Password<input type="password" id="confirmpassword" name="confirmpassword"></label></div>
-            
+        <div class="form-header">
+            <h2 class="customfont">Sign Up!</h2>
+            <p>This is the page you are looking for! Just pop your details in the form below and we will have you signed up in a jiffy.</p>
         </div>
-        <div class="form-footer bdr">
-            <input type="submit">
+    <form action="" id="inputform">
+        <div class="form-container ">
+            <div><label for="firstname">First Name*<input type="text" id="firstname" name="firstname" autocomplete="given-name" <!--required--></label></div>
+            <div><label for="lastname">Last Name<input type="text" id="lastname" name="lastname" autocomplete="family-name"></label></div>
+            <div><label for="email">Email Address*<input type="email" id="email" name="email" autocomplete="email" <!--required--></label></div>
+            <div><label for="phone">Phone Number<input type="tel" id="phone" name="phone" autocomplete="mobile"></label></div>
+            <div class="bdr"><label for="password">Password*<input type="password" id="password" name="password" autocomplete="current-password" required></label></div>
+            <div class="bdr"><label for="confirmpassword">Confirm Password*<input type="password" id="confirmpassword" name="confirmpassword" autocomplete="current-password" required></label></div>
+            <div class="break"></div>
+            <div class="bdr"><p class="customfont bdr">* = required</p></div>
+            <div class="bdr"><span id="passwordMessage" class="customfont bdr" /></div>
+        </div>
+        
+        <div class="form-footer">
+            <input type="submit" class="button" id="submitbutton" />
         </div>
     </form>
     </div>

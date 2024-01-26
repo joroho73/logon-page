@@ -14,9 +14,23 @@ html, body {
     border: 1px solid burlywood;
 }
 
-h1.customfont {
-    font-size: 10rem;
+.customfont {
     font-family: 'TitleFont', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+h1 {
+    font-size: 10rem;
+}
+h2 {
+    font-size: 6rem;;
+}
+p {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -60,7 +74,7 @@ label {
     flex-grow: 2;
 }
 
-.spacer-2 {
+.spacer-2    {
     flex-grow: 12;
 }
 
@@ -76,8 +90,6 @@ label {
     flex-grow: 3;
 }
 
-
-
 .odin-logo {
     height: 7.5rem;
 }
@@ -91,17 +103,24 @@ label {
 }
 
 .form-header {
-
+    padding: 0px 3rem;
+    margin: 0px;
 }
 .form-container {
     height:fit-content;
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
+
+    background-color: #B1DAFB;
+    filter: drop-shadow(1px 1px 4px grey);
+    margin: 1.6rem 0px;
 
 }
 .form-footer {
-
+    padding: 0px 3rem;
+    margin: 0px;
 }
 
 .formlist {
@@ -109,5 +128,83 @@ label {
 }
 
 .form-container div {
-    border: 1px solid red;
+    padding: 0.8rem;
+    padding-inline-start: 0px;
+    flex-basis: 213px;
+}
+
+/* 
+   This is used to attach a linebreak in flexbox. 
+   IMPORTANT, this declaration should appear 
+   after '.form-contaier div'.
+*/
+.break {
+    flex-basis: 100% !important; 
+    height: 0;
+    padding: 0px !important;
+    margin: 0px;
+  }
+
+
+
+label,input{
+    display:flex;
+    flex-direction:column;
+  }
+
+  input {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 0.4rem;
+   
+  }
+
+  input:invalid {
+    border: 2px solid white;
+    background-color: lightpink;
+
+  }
+  
+  input:valid {
+    border: 2px solid black;
+    background-color:#c7ffc7;
+  }
+
+  .button {
+    font-family: 'TitleFont', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    padding: .2rem 1.2rem;
+    margin: 0rem;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.button:disabled {
+    background-color: lightgrey;
+    color: gray;
+}
+
+.button:valid {
+
+    background-color: blue;
+    color: white   ;
+}
+
+#passwordMessage {
+    padding: .2em;
+    
+    border-radius: 3px;
+}
+
+.passwordMessageTrue {
+    background-color: #c7ffc7;
+    border: 2px solid white;
+
+}
+
+.passwordMessageFalse {
+    background-color: lightpink;
+    border: 2px solid white;
+
 }
