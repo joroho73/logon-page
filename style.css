@@ -52,7 +52,7 @@ label {
 
 .left-container {
     width: 40%;
-    background: #bde5fe url("../i/seascape.jpg") no-repeat 10%;
+    background: #bde5fe url("/i/seascape.jpg") no-repeat 10%;
     background-size: cover;
     padding: 0px;
     margin: 0px;

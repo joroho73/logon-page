@@ -97,7 +97,7 @@ function checkPasswordStrength(password) {
     }
   }
 
-  function setButtonStatus(val){
+  function setButtonStatus(){
     if (passwordStrengthMessage.length < 22 && passwordMessage.innerText == "passwords match!") {
         submitbutton.className = "active";
     } else {
